@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".calculatorActivity">
+
+    <EditText
+        android:id="@+id/BillAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Enter valor"
+        android:inputType="numberDecimal" />
+
+    <RadioGroup
+        android:id="@+id/groupRating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+    <RadioButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Excelente - 10%" />
+
+    <RadioButton
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ótimo - 8%" />
+
+    <RadioButton
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bom - 5%" />
+
+    <RadioButton
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ruim - 2%" />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcule a gorjeta"
+        android:id="@+id/calcula"
+        />
+
+    <EditText
+        android:id="@+id/txtTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tipo de Gorjeta"
+        android:layout_margin="16dp"
+        android:focusable="false"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTotal"
+        android:hint="Total do valor"
+        android:layout_margin="16dp"
+        android:focusable="false"
+        />
+</LinearLayout>
