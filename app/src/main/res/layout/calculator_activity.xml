@@ -8,11 +8,11 @@
     tools:context=".calculatorActivity">
 
     <EditText
-        android:id="@+id/BillAmount"
+        android:id="@+id/txtValorEnter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:hint="Enter valor"
+        android:hint="Digite o valor"
         android:inputType="numberDecimal" />
 
     <RadioGroup
